@@ -1,0 +1,14 @@
+site:
+  title: "kobwesite"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/developmentExecutable/Farouk.js"
+      api: "build/libs/Farouk.jar"
+    prod:
+      script: "build/distributions/Farouk.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
