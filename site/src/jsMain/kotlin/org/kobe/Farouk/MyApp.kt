@@ -16,28 +16,17 @@ import com.varabyte.kobweb.silk.init.registerBaseStyle
 import kotlinx.browser.localStorage
 import org.jetbrains.compose.web.css.*
 
-private const val COLOR_MODE_KEY = "Farouk:colorMode"
 
 @InitSilk
 fun initSilk(ctx: InitSilkContext) {
-    ctx.config.initialColorMode = localStorage.getItem(COLOR_MODE_KEY)?.let { ColorMode.valueOf(it) } ?: ColorMode.LIGHT
-
-    ctx.stylesheet.registerBaseStyle("body") {
-        Modifier.fontFamily(
-	    "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-            "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif"
-        )
-    }
+    //Configure silk
 }
 
 @App
 @Composable
 fun MyApp(content: @Composable () -> Unit) {
     SilkApp {
-        val colorMode = getColorMode()
-        LaunchedEffect(colorMode) {
-            localStorage.setItem(COLOR_MODE_KEY, colorMode.name)
-        }
+
 
         Surface(SmoothColorStyle.toModifier().minHeight(100.vh)) {
             content()

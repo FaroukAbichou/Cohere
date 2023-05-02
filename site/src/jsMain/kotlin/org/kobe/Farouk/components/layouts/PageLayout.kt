@@ -32,7 +32,9 @@ fun PageLayout(title: String, content: @Composable () -> Unit) {
         .gridTemplateRows("minmax(0, 1fr) min-content")
     ) {
         Column(
-            modifier = Modifier.fillMaxSize().textAlign(TextAlign.Center),
+            modifier = Modifier
+                .fillMaxSize().
+                textAlign(TextAlign.Center),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             NavHeader()

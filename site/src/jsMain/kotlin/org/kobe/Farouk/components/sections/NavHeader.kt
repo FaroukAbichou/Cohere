@@ -42,12 +42,21 @@ val NavItemStyle by ComponentStyle {
 }
 
 val NavButtonVariant by NavItemStyle.addVariant {
-    base { Modifier.padding(0.px).borderRadius(50.percent) }
+    base {
+        Modifier
+            .padding(0.px)
+            .borderRadius(50.percent)
+    }
 }
 
 @Composable
 private fun NavLink(path: String, text: String) {
-    Link(path, text, NavItemStyle.toModifier(), UndecoratedLinkVariant)
+    Link(
+        path,
+        text,
+        NavItemStyle.toModifier(),
+        UndecoratedLinkVariant
+    )
 }
 
 @Composable
@@ -64,10 +73,14 @@ fun NavHeader() {
             Spacer()
 
             Button(
-                onClick = { colorMode = colorMode.opposite() },
+                onClick = {
+                    colorMode = colorMode.opposite() 
+                },
                 NavItemStyle.toModifier(NavButtonVariant)
             ) {
-                Box(Modifier.margin(8.px)) {
+                Box(
+                    Modifier.margin(8.px)
+                ) {
                     when (colorMode) {
                         ColorMode.LIGHT -> FaMoon()
                         ColorMode.DARK -> FaSun()
