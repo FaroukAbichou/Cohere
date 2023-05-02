@@ -18,6 +18,7 @@ import org.kobe.Farouk.components.layouts.PageLayout
 import org.jetbrains.compose.web.attributes.InputType
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
+import org.kobe.Farouk.components.HeroImage
 import org.w3c.dom.Attr
 
 @Composable
@@ -32,10 +33,7 @@ fun test(){
             }
         )
         P()
-        Image(
-            src = "favicon.ico",
-            desc = ""
-        )
+        HeroImage()
 
     }
 }
@@ -44,55 +42,5 @@ fun test(){
 @Page
 @Composable
 fun HomePage() {
-    Box (
-        modifier = Modifier
-            .fillMaxSize()
-    ){
-        Image(
-            src = "Background.jpeg",
-            desc = "",
-            modifier = Modifier
-                .fillMaxSize()
-        )
-
-        Row (
-            modifier = Modifier
-                .padding(
-                    4.cm
-                )
-                .fillMaxSize()
-
-        ){
-            H1(
-
-            ) {
-                Text("Welcome to Kobweb!")
-                SpanText(
-                    text = "Create rich, dynamic web apps with ease ",
-                    modifier = Modifier
-                        .animation(
-                            CSSAnimation(
-                                name = "slide",
-                                750.ms ,
-                                timingFunction = AnimationTimingFunction("ease-in-out") ,
-                                delay = 250.ms,
-                                iterationCount = AnimationIterationCount.Infinite,
-                                direction = AnimationDirection.Reverse,
-                                fillMode = AnimationFillMode("forwards"),
-                                playState = AnimationPlayState("running")
-                            )
-                        )
-                        .color(Colors.Blue)
-                )
-            }
-            Spacer()
-            P {
-                Text("Hello World!")
-
-                Text("Hello World!")
-            }
-            Text("Hello World!")
-        }
-    }
-
+    HeroImage()
 }
