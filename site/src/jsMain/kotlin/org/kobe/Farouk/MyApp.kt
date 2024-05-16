@@ -1,4 +1,4 @@
-package org.kobe.Farouk
+package org.faroukabichou.Cohere
 
 import androidx.compose.runtime.*
 import com.varabyte.kobweb.compose.ui.Modifier

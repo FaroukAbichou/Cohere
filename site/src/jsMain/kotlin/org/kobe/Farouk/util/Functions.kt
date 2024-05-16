@@ -1,4 +1,4 @@
-package org.kobe.Farouk.util
+package org.faroukabichou.Cohere.util
 
 import androidx.compose.runtime.*
 import kotlinx.browser.document

@@ -7,7 +7,7 @@ plugins {
     alias(libs.plugins.kobwebx.markdown)
 }
 
-group = "org.kobe.Farouk"
+group = "org.faroukabichou.Cohere"
 version = "1.0-SNAPSHOT"
 
 kobweb {
@@ -19,7 +19,7 @@ kobweb {
 }
 
 kotlin {
-    configAsKobwebApplication("Farouk", includeServer = true)
+    configAsKobwebApplication("Cohere", includeServer = true)
 
     @Suppress("UNUSED_VARIABLE") // Suppress spurious warnings about sourceset variables not being used
     sourceSets {

@@ -1,4 +1,4 @@
-package org.kobe.Farouk.models
+package org.faroukabichou.Cohere.models
 
 import org.jetbrains.compose.web.css.CSSColorValue
 import org.jetbrains.compose.web.css.rgb

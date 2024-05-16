@@ -1,4 +1,4 @@
-package org.kobe.Farouk.api
+package org.faroukabichou.Cohere.api
 
 import com.varabyte.kobweb.api.Api
 import com.varabyte.kobweb.api.ApiContext

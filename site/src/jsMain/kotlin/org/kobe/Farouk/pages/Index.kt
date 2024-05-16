@@ -1,4 +1,4 @@
-package org.kobe.Farouk.pages
+package org.faroukabichou.Cohere.pages
 
 import androidx.compose.runtime.*
 import com.varabyte.kobweb.compose.css.AnimationIterationCount
@@ -14,11 +14,11 @@ import com.varabyte.kobweb.core.Page
 import com.varabyte.kobweb.silk.components.graphics.Image
 import com.varabyte.kobweb.silk.components.text.SpanText
 import org.jetbrains.compose.web.attributes.AttrsScope
-import org.kobe.Farouk.components.layouts.PageLayout
+import org.faroukabichou.Cohere.components.layouts.PageLayout
 import org.jetbrains.compose.web.attributes.InputType
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
-import org.kobe.Farouk.components.HeroImage
+import org.faroukabichou.Cohere.components.HeroImage
 import org.w3c.dom.Attr
 
 @Composable

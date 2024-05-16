@@ -1,4 +1,4 @@
-package org.kobe.Farouk.models
+package org.faroukabichou.Cohere.models
 
 enum class Section(
     val id: String,

@@ -1,4 +1,4 @@
-package org.kobe.Farouk.sections
+package org.faroukabichou.Cohere.sections
 
 import androidx.compose.runtime.*
 import com.varabyte.kobweb.compose.css.AlignSelf

@@ -1,4 +1,4 @@
-package org.kobe.Farouk.components
+package org.faroukabichou.Cohere.components
 
 import androidx.compose.runtime.Composable
 import com.varabyte.kobweb.compose.foundation.layout.Box
@@ -6,7 +6,7 @@ import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.size
 import com.varabyte.kobweb.silk.components.graphics.Image
 import org.jetbrains.compose.web.css.px
-import org.kobe.Farouk.util.Res
+import org.faroukabichou.Cohere.util.Res
 
 @Composable
 fun HeroImage(

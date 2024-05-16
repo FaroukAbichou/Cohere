@@ -6,6 +6,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Farouk"
+rootProject.name = "Cohere"
 
 include(":site")

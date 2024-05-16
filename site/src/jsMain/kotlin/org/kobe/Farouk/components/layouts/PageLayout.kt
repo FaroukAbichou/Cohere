@@ -1,4 +1,4 @@
-package org.kobe.Farouk.components.layouts
+package org.faroukabichou.Cohere.components.layouts
 
 import androidx.compose.runtime.*
 import com.varabyte.kobweb.compose.css.*
@@ -10,8 +10,8 @@ import com.varabyte.kobweb.compose.ui.modifiers.*
 import kotlinx.browser.document
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
-import org.kobe.Farouk.sections.Footer
-import org.kobe.Farouk.sections.NavHeader
+import org.faroukabichou.Cohere.sections.Footer
+import org.faroukabichou.Cohere.sections.NavHeader
 
 @Composable
 fun PageLayout(title: String, content: @Composable () -> Unit) {

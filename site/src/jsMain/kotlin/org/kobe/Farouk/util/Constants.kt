@@ -1,7 +1,7 @@
-package org.kobe.Farouk.util
+package org.faroukabichou.Cohere.util
 
 object Constants {
-    const val WEBSITE = "https://farouk_abichou.com/"
+    const val WEBSITE = "https://Cohere_abichou.com/"
     const val SECTION_WIDTH = 1920
     const val FONT_FAMILY = "Roboto"
 
